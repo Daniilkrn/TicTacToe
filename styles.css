@@ -1,0 +1,183 @@
+*{ margin: 0; padding: 0; border: 0;}
+
+a {text-decoration: none;}
+
+ul,li,ol {list-style: none;}
+
+html,
+body {
+    height: 100%; line-height: 1; background: #F9F9F9;
+}
+
+body.active_body {
+    overflow: hidden;
+}
+
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(/public/img/nature-g107c9b9b1_1280.jpg) no-repeat;
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    flex: 1 1 auto;
+    margin-top: 200px; 
+    margin: 0 auto;
+}
+
+.tictac__container {
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 100px;
+    width: 605px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin: 0px;
+    width: 198px;
+    height: 198px;
+    border: 1px solid black;
+    background-color: rgb(223, 215, 215);
+}
+
+.tictac__container :hover {
+    background-color: #585252;
+    cursor: pointer;
+}
+
+.section.active {
+    background: url(/public/img/ssasd.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+
+.section.active_clear{
+    pointer-events: none;
+}
+
+.section.active_circle {
+    background: url(/public/img/131_krug-png_-2-tys-izobrazhenij-najdeno-v-YAndeks.Kartinkah.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.section.winner_color {
+    box-shadow: 0px 0px 20px rgba(73, 238, 8, 1);
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.refresh_button{
+    border: 1px rgb(20, 16, 16) solid;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: Vollkorn;
+    background-color: aquamarine;
+    box-shadow: 12px black;
+}
+
+.refresh_button li {
+   display: flex;
+   justify-content: center;
+   font-size: 18px;
+}
+
+.refresh_button li a {
+    color: black;
+    padding: 20px 10px;
+}
+
+.refresh_button li:hover{
+   opacity: 0.7;
+   cursor: pointer;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.winner_word {
+    border: 1px solid black;
+    width: 200px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    margin-top: 0px;
+    position: relative;
+    left: -300px;
+    top: -80px;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.winner_word li {
+    display: flex;
+    justify-content: center;
+    font-family: Vollkorn;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.winner_word.active_winner_wordY {
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    top: 30px;
+    left: 0px;
+    background: url(131_krug-png_-2-tys-izobrazhenij-najdeno-v-YAndeks.Kartinkah.png) no-repeat;
+    background-size: 50px 50px;
+    background-color: rgb(223, 215, 215);
+    background-position: 10px;
+}
+
+.winner_word.active_winner_wordX  {
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    top: 30px;
+    left: 0px;
+    background: url(ssasd.png) no-repeat;
+    background-size: 50px 30px;
+    background-color: rgb(223, 215, 215);
+    background-position: 10px;
+}
+
+.draw {
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    width: 200px;
+    background-color: rgb(223, 215, 215);
+    padding: 20px 10px;
+    justify-content: center;
+    display: flex;
+    font-family: Vollkorn;
+}
+
+.draw {
+    position: relative;
+    left: -300px;
+    top: -80px;
+}
+
+.draw.active_draw{
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    top: 20px;
+    left: 0px;
+    background-color: rgb(223, 215, 215);
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 auto; 
+}
